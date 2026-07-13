@@ -28,6 +28,8 @@ jobs:
             # Static code artifects
             - name: Upload static files
               uses: actions/upload-pages-artifact@v3
+              with:
+                path: "."
 
             # Deploy to GitHub pages
             - name: Deploy to GitHub pages
